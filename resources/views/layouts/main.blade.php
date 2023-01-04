@@ -22,8 +22,13 @@ date_default_timezone_set('America/Sao_Paulo');
 
     <navbar>
         <div class="bg-[#06103d] h-10 w-full">
+
             <x-navbar.navbar_left />
+
+            <x-navbar.navbar_right />
         </div>
+
+        <x-navbar.navbar_logo />
     </navbar>
 
     <main>

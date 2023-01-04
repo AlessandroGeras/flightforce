@@ -59,7 +59,6 @@
 }
 
 @layer utilities {
-
     /*darkmode component*/
     .shadow {
         box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
@@ -73,5 +72,38 @@
             hsla(0, 0%, 0%, 0.5),
             hsla(0, 0%, 0%, 0)
         );
+    }
+
+    /*container gallery*/
+    .gallery-container {
+        overflow: hidden;
+        width: 300px;
+        height: 550px;
+        border-radius: 8rem;
+    }
+
+    /*gallery image*/
+    .bg-pilot {
+        width: 470px;
+        height: 550px;
+        background-image: url("/public/assets/img/pilot.jpg");
+        background-size: 470px 550px;
+        transition: 1s all;
+        border-radius: 1rem;
+        filter: brightness(70%);
+        cursor: pointer;
+    }
+
+    .bg-pilot:hover {
+        transform: scale(1.1);
+    }
+
+    .bg-main:hover > div > span > i.fa-circle {
+        background: #2969f2;
+        color:#2969f2;
+        border-radius: 50%;
+        height: 1em;
+        width: 1em;
+        margin-left:4px;
     }
 }
